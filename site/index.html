@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 	<meta charset="UTF-8">
 	<title>Test</title>
-	<h1>More to Add</h1>
+	<link type="text/css" rel="stylesheet" href="css/style.css" >
+<style>
+
+</style>
 </head>
 <body>
-	
+<!--Sticky Header-->
+<header> <a href="#">"This is Header"</a>
+	<nav>
+		<button style="float:right;" title="does this work too?">立刻購買</button>
+		<ul>
+		<li><a href="#offer" title="what does this mean?">This</a></li>
+		<li>DOES/DOESN'T
+			<ul> Can I put things here?
+				<li>Doesn't</li>
+				<li><a href="#" target="_blank">Does</a></li>
+			</ul>
+		</li>
+		<li><a href ="#">Help</a></li></ul>
+
+	</nav>
+</header>
+<!--Sicky Header-->
+<section>Section 1
+	<article>Article 1 
+		
+		 WUTTTT</article>
+
+</section>
+<div id="firstView"><h1>FirstView</h1><img src="t.jpg" width="400px" height="480px" alt="No pictures bitch"></div>
+<div id="comparison">123</div>
+<div id="productEffect">&nbsp;</div>
+<div id="productEffect2">&nbsp;</div>
+<div id="productEffect3">&nbsp;</div>
+<div id="productIngre">&nbsp;</div>
+<section id="shoppingCart">
+	<div id="offer"></div>
+	<form action="https://ccore.spgateway.com/MPG/mpg_gateway" method="POST">
+		<input type="hidden" name="MerchantID" value="MS32495785">
+		<input type="hidden" name="Version" value="1.4">
+		<input type="hidden" name="RespondType" value="JSON">
+		<input type="radio" name="Amt" value="40"> 40 <br>
+		<input type="radio" name="Amt" value="80"> 80 <br>
+		<input type="hidden" name="ItemDesc">
+		<input type="hidden" name="ReturnURL" value="">
+		<input type="hidden" name="NotifyURL" value="">
+		<input type="hidden" name="LoginType" value=0>
+		Email: <input type="text" name="Email"><br>
+		<input type="submit" value="確認送出"> 
+
+	</form>
+</section>
+<footer>Copyright? Fuck that shit</footer>
 </body>
 </html>

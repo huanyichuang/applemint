@@ -1,0 +1,25 @@
+body {
+	color: #262626;
+	font-family:sans-serif;
+}
+nav li {
+	list-style: none;
+}
+button {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px;
+	color: #DFDFDF;
+	background-color: #00BBCC;
+	margin-right: 5%;
+}
+
+a:link, a:visited {	
+	text-decoration: none;
+	color: #262626;
+	display: block;
+	border: 1px solid;
+	width: 100px;
+	text-align: center;
+	margin-bottom: 1px;
+}
