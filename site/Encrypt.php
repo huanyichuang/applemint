@@ -20,7 +20,7 @@ $trade_info_arr = array(
     'RespondType' => $_POST['RespondType'], 
     'TimeStamp' => time(), 
     'Version' => 1.4, //要避免使用""，不然被讀成string的話會顯示版本錯誤
-    'MerchantOrderNo' => uniqid(), //目前先產生隨機代碼，到時候有其他命名規則可以再補上
+    'MerchantOrderNo' => date("Ym").substr(uniqid(),7,12), //目前先產生隨機代碼，到時候有其他命名規則可以再補上
     'Amt' => $_POST['Amt'], 
     'ItemDesc' => $_POST['ItemDesc'],
     'ReturnURL' => "https://www.applemint.tech/dev/thankyou.php"
@@ -45,8 +45,8 @@ $TradeSha = strtoupper(hash("sha256", "HashKey=".$mer_key."&".$TradeInfo."&HashI
         <input type="hidden" name="ReturnURL" value="https://www.applemint.tech/dev/thankyou.php">
         <input type="hidden" name="NotifyURL" value="">
         <input type="hidden" name="LoginType" value=0>
-        Email: <input type="text" name="Email"><br>
-        <input type="submit" value="Lucky ball, go!">
+        <input type="hidden" name="Email">
+<!--         <input type="submit" value="Lucky ball, go!"> -->
 </form>
 <script type="text/javascript">encrypt.submit();</script>
 <!-- <?php echo $TradeInfo."<br>" ?>  -->

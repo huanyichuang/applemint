@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MWD43C4');
-	</script>
-	<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<title>測試頁面</title>
+<meta name="description" content="測試頁面" />
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Test Onepage" />
+<meta property="og:description" content="這是一個測試頁，這段文字是測試 open graph 的 meta" />
+<meta property="og:url" content="http://dev.applemint.tech/site/" />
+<meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MWD43C4');
+</script>
+<!-- End Google Tag Manager -->
 <style>
+	  /* Note: Try to remove the following lines to see the effect of CSS positioning */
 	  .affix {
-      top: 0;
-      width: 100%;
-  }
+	      top: 0;
+	      width: 100%;
+	  }
 
-  	  .affix + .container-fluid {
-      padding-top: 70px;
-  }
+	  .affix + .container-fluid {
+	      padding-top: 0px;
+	  }
 </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWD43C4"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWD43C4"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->	
-<div class="container-fluid bg-primary text-uppercase">
+<div class="container-fluid bg-primary" style="height:96px">
 	<h1 style="text-align: center">Here's the logo</h1>
-	<p style="text-align: center"><mark>Here you can put description about your product</mark></p>
 </div>
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="">
-	<div class="container-fluid clearfix" id="stickyHead">
-		<div><p style="padding: 13px">Product Name as you wish</p></div>
-		<button type="button" class=" btn btn-success btn-lg">立即購買</button>
-	</div>
-	
-</nav>
+
+<div class="container-fluid bg-info" id="stickyHead" data-spy="affix" data-offset-top="92">
+	<div style="float:left;padding:15px 0 15px 0"><span>Product Name as you wish</span></div>
+	<button style="float:right" href="#shoppingCart" class="btn btn-success navbar-btn">立即購買</button>
+</div>
 <!-- 需要研究如何利用 affix 做出sticky header -->
-<div class="container" id="firstView">
+<div class="container-fluid" id="firstView">
 	<p style="text-align:center"><img src="a.jpg" width="90%" height="auto" alt="This would be alternative text if no image is loaded."></p>
 	<div class="panel panel-default">
 		<div class="panel-heading"><h1 style="text-align: center">產品說明</h1></div>
@@ -59,25 +62,80 @@
 		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">訴求 A</h1></div>
 		<div class="panel-body"><p>這裡提供產品的第一種訴求，除了價值主張以外，產品的主要訴求到底是什麼？譬如說</p></div>
 		<div class="panel-footer" style="text-align: center">
-			<button class="btn-primary" data-toggle="collapse" data-target="#video1">+</button>
+			<button id="accordion1" type="button" class="btn-primary" data-toggle="collapse" data-target="#video1">
+				<span class="glyphicon glyphicon-search"></span> +
+			</button>
 			<div id="video1" class="collapse">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="container" id="productEffect2"></div>
-<div class="container" id="productEffect3"></div>
-<div class="container" id="ingredient"></div>
-<div class="container" id="usageTutorial"></div>
-<section id="shoppingCart">
+<div class="container" id="productEffect2" style="background-color: #f9f9f9">
+		<div class="panel-default">
+		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">訴求 B</h1></div>
+		<div class="panel-body"><p>這裡提供產品的第二種訴求，除了價值主張以外，產品的主要訴求到底是什麼？譬如說</p></div>
+		<div class="panel-footer" style="text-align: center">
+			<button id="accordion2" type="button" class="btn-primary" data-toggle="collapse" data-target="#video2">
+				<span class="glyphicon glyphicon-search"></span> +
+			</button>
+			<div id="video2" class="collapse">
+				<iframe width="100%"" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" id="productEffect3">
+		<div class="panel-default">
+		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">訴求 C</h1></div>
+		<div class="panel-body"><p>這裡提供產品的第三種訴求，除了價值主張以外，產品的主要訴求到底是什麼？譬如說</p></div>
+		<div class="panel-footer" style="text-align: center">
+			<button id="accordion3" type="button" class="btn-primary" data-toggle="collapse" data-target="#video3">
+				<span class="glyphicon glyphicon-search"></span> +
+			</button>
+			<div id="video3" class="collapse">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" id="ingredient" style="background-color: #f9f9f9">
+		<div class="panel-default">
+		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">其他補充</h1></div>
+		<div class="panel-body"><p>這裡提供產品的第一種訴求，除了價值主張以外，產品的主要訴求到底是什麼？譬如說</p></div>
+		<div class="panel-footer" style="text-align: center">
+			<button id="accordion4" type="button" class="btn-primary" data-toggle="collapse" data-target="#video4">
+				<span class="glyphicon glyphicon-search"></span> +
+			</button>
+			<div id="video4" class="collapse">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" id="usageTutorial">
+		<div class="panel-default">
+		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">使用方法</h1></div>
+		<div class="panel-body"><p>使用方法</p></div>
+		<div class="panel-footer" style="text-align: center">
+			<button id="accordion5" type="button" class="btn-primary" data-toggle="collapse" data-target="#howto">
+				<span class="glyphicon glyphicon-search"></span> +
+			</button>
+			<div id="howto" class="collapse">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<div id="shoppingCart" style="background-color: #f9f9f9">
 	<div id="offer"></div>
-	<form class ="form container" action="Encrypt.php" method="POST">
+	<form class ="form container" action="https://www.applemint.tech/dev/site/Encrypt.php" method="POST">
 		<div id="encryptData">
 			<input type="hidden" name="MerchantID" value="MS32495785">
 			<input type="hidden" name="Version" value=1.4>
 			<input type="hidden" name="RespondType" value="JSON">
-			<input type="hidden" name="ReturnURL" value="https://www.applemint.tech/dev/thankyou.php">
+			<input type="hidden" name="ReturnURL" value="">
 			<input type="hidden" name="NotifyURL" value="">
 			<input type="hidden" name="LoginType" value=0>
 		</div>
@@ -94,7 +152,9 @@
 		</div>
 		<div style="text-align: center"><input class="btn btn-success" style="border-radius: 10px" type="submit" value="確認送出"></div>
 	</form>
-</section>
-<footer>Copyright? Fuck that shit</footer>
+</div>
+<footer>
+<ul>
+</ul></footer>
 </body>
 </html>
