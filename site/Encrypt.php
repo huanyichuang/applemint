@@ -23,6 +23,7 @@ $trade_info_arr = array(
     'MerchantOrderNo' => date("Ym").substr(uniqid(),7,12), //目前先產生隨機代碼，到時候有其他命名規則可以再補上
     'Amt' => $_POST['Amt'], 
     'ItemDesc' => $_POST['ItemDesc'],
+    'Email' => $_POST['Email'],
     'ReturnURL' => "https://www.applemint.tech/dev/thankyou.php"
     );
 $mer_key = 'KYuCP67M4PORLKEnBOABZxj13clUOMEE'; //智付通提供的Hash key
@@ -45,7 +46,7 @@ $TradeSha = strtoupper(hash("sha256", "HashKey=".$mer_key."&".$TradeInfo."&HashI
         <input type="hidden" name="ReturnURL" value="https://www.applemint.tech/dev/thankyou.php">
         <input type="hidden" name="NotifyURL" value="">
         <input type="hidden" name="LoginType" value=0>
-        <input type="hidden" name="Email">
+        <input type="hidden" name="Email" value="<?php echo $trade_info_arr['Email'] ?>">
 <!--         <input type="submit" value="Lucky ball, go!"> -->
 </form>
 <script type="text/javascript">encrypt.submit();</script>
