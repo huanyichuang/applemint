@@ -14,6 +14,9 @@
 	width: 100%;
 	float: left;
 }
+.panel {
+
+}
 @media only screen and (min-width: 768px) {
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}
@@ -40,6 +43,8 @@ img#logo {
 
 body {
 	color: #262626;
+	font-size: 16px;
+	line-height: 30px;
 	font-family: sans-serif;
 }
 nav li {
@@ -55,6 +60,9 @@ button.btn-success {
 }
 button.btn-success:hover {
 	background-color: #932629;
+}
+button.btn-success:active:after {
+	background-color: #751d27;
 }
 
 a:link, a:visited {	
