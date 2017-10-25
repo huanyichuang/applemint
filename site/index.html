@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MWD43C4');
 </script>
@@ -21,38 +22,40 @@
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWD43C4"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWD43C4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->	
-<div class="container-fluid bg-primary" style="height:96px; text-align: center;">
-	<img id="logo" src="img/hiseido_white.png">
+<div class="container-fluid bg-primary hidden-xs" style="height:148px; text-align: center;">
+	<img class="hidden-xs" id="logo" src="img/hiseido_white.png">
+
+</div>
+<div class="container-fluid bg-primary visible-xs" style="height:96px; text-align: center;">
+	<img class="visible-xs" id="logoxs" src="img/hiseido_white.png">
 </div>
 
-<div class="container-fluid" id="stickyHead" data-spy="affix" data-offset-top="92">
+<div class="container-fluid" id="stickyHead" data-spy="affix" data-offset-top="148">
 	<div class="pull-left"><img src="img/logo.png"></div>
-	<button href="#shoppingCart" class="btn btn-success navbar-btn pull-right">立即購買</button>
+	<button href="#shoppingCart" class="btn btn-success cta navbar-btn pull-right">立即購買</button>
 </div>
-<div class="container-fluid" id="firstView">
-	<p style="text-align:center"><img src="img/sk2-1_1024x538.jpg" alt="This would be alternative text if no image is loaded."></p>
+<div class="container-fluid pd0" id="firstView" style="text-align: center">
+	<img src="img/sk2-1_1024x538.jpg" alt="This would be alternative text if no image is loaded.">
 	<div class="panel panel-default">
-		<div class="panel-heading"><h1 style="text-align: center">產品說明</h1></div>
-		<div class="panel-body" style="padding:5px"><p>這裡是產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明。</p>
+		<div class="panel-body"><p>這裡是產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明產品說明。</p>
 		</div>
 	</div>
 </div>
-<div class="container-fluid" id="comparison" style="background-color: #f9f9f9">
+<div class="container-fluid pd0" id="comparison" style="background-color: #f9f9f9">
 	<div class="panel-default">
 		<img src="img/sk2-2_1024x538.jpg">
-		<div class="panel-heading"></div>
-		<div class="panel-body"><p>產品最大價值</p></div>
+		<div class="panel-body"><p>產品最大價值</p></div> <!--Agenda -->
 	</div>
 </div>
-<div class="container" id="productEffect">
+<div class="container-fluid pd0" id="productEffect">
 	<div class="panel-default">
-		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">訴求 A</h1></div>
+		<img src="img/sk2-3_1024x538.jpg">
 		<div class="panel-body"><p>這裡提供產品的第一種訴求，除了價值主張以外，產品的主要訴求到底是什麼？譬如說</p></div>
 		<div class="panel-footer" style="text-align: center">
 			<button id="accordion1" type="button" class="btn-success" data-toggle="collapse" data-target="#video1">
-				<span class="glyphicon glyphicon-search"></span> +
+				<span class="glyphicon glyphicon-plus"></span>
 			</button>
 			<div id="video1" class="collapse">
 				<iframe width="100%" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
@@ -60,13 +63,13 @@
 		</div>
 	</div>
 </div>
-<div class="container" id="productEffect2" style="background-color: #f9f9f9">
+<div class="container-fluid pd0" id="productEffect2" style="background-color: #f9f9f9">
 		<div class="panel-default">
-		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">訴求 B</h1></div>
+		<img src="img/sk2-3_1024x538.jpg">
 		<div class="panel-body"><p>這裡提供產品的第二種訴求，除了價值主張以外，產品的主要訴求到底是什麼？譬如說</p></div>
 		<div class="panel-footer" style="text-align: center">
 			<button id="accordion2" type="button" class="btn-success" data-toggle="collapse" data-target="#video2">
-				<span class="glyphicon glyphicon-search"></span> +
+				<span class="glyphicon glyphicon-plus"></span>
 			</button>
 			<div id="video2" class="collapse">
 				<iframe width="100%"" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
@@ -74,52 +77,10 @@
 		</div>
 	</div>
 </div>
-<div class="container" id="productEffect3">
-		<div class="panel-default">
-		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">訴求 C</h1></div>
-		<div class="panel-body"><p>這裡提供產品的第三種訴求，除了價值主張以外，產品的主要訴求到底是什麼？譬如說</p></div>
-		<div class="panel-footer" style="text-align: center">
-			<button id="accordion3" type="button" class="btn-success" data-toggle="collapse" data-target="#video3">
-				<span class="glyphicon glyphicon-search"></span> +
-			</button>
-			<div id="video3" class="collapse">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="container" id="ingredient" style="background-color: #f9f9f9">
-		<div class="panel-default">
-		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">其他補充</h1></div>
-		<div class="panel-body"><p>這裡提供產品的第一種訴求，除了價值主張以外，產品的主要訴求到底是什麼？譬如說</p></div>
-		<div class="panel-footer" style="text-align: center">
-			<button id="accordion4" type="button" class="btn-success" data-toggle="collapse" data-target="#video4">
-				<span class="glyphicon glyphicon-search"></span> +
-			</button>
-			<div id="video4" class="collapse">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="container" id="usageTutorial">
-		<div class="panel-default">
-		<div class="panel-heading bg-primary"><h1 style="text-align: center;padding:10px">使用方法</h1></div>
-		<div class="panel-body"><p>使用方法</p></div>
-		<div class="panel-footer" style="text-align: center">
-			<button id="accordion5" type="button" class="btn-success" data-toggle="collapse" data-target="#howto">
-				<span class="glyphicon glyphicon-search"></span> +
-			</button>
-			<div id="howto" class="collapse">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/HLWYULOErwc" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<hr>
-<div id="shoppingCart" style="background-color: #f9f9f9">
+
+<div class="container-fluid pd0" style="background-color: #f9f9f9">
 	<div id="offer"></div>
-	<form class ="form container" action="https://www.applemint.tech/dev/site/Encrypt.php" method="POST">
+	<form id="shoppingCart" class ="form container-fluid pd0" action="https://www.applemint.tech/dev/site/Encrypt.php" method="POST">	
 		<div id="encryptData">
 			<input type="hidden" name="MerchantID" value="MS32495785">
 			<input type="hidden" name="Version" value=1.4>
@@ -129,20 +90,29 @@
 			<input type="hidden" name="LoginType" value=0>
 		</div>
 		<div class="form-group bg-primary">
+			<label class="control-label">收件人姓名</label>
+			<input class="form-control input-lg" type="text" name="name" placeholder="輸入收件人姓名">
+			<label class="control-label" for="sel1">產品名稱</label>
+			<select class="form-control" id="sel1" name="ItemDesc">
+				<option value="青春還原露">青春還原露</option>
+				<option value="青春修復霜">青春修復霜</option>
+				<option value="無敵保濕乳">無敵保濕乳</option>
+			</select>
 			<label class="control-label">金額</label>
 			<div id="price" class="form-control">
-				<label class="radio-inline"><input type="radio" name="Amt" value="1">1</label>
-				<label class="radio-inline"><input type="radio" name="Amt" value="2">2</label>
+				<input type="hidden" id="priceAmt" name="Amt" value="100"><span>NT$ 100</span>	
 			</div>			
-			<label class="control-label">產品名稱</label>
-			<input class="form-control" type="text" name="ItemDesc" value="這個產品名稱">
-			<label class="control-label">Email:</label>
-			<input class="form-control" type="email" name="Email">	
+			<label class="control-label">Email</label>
+			<input class="form-control input-lg" type="email" name="Email" placeholder="輸入Email">	
+			<label class="control-label">手機號碼</label>
+			<input class="form-control input-lg" type="text" name="mobile" placeholder="輸入手機號碼">
+
 		</div>
 		<div style="text-align: center"><input class="btn btn-success" style="border-radius: 10px" type="submit" value="確認送出"></div>
 	</form>
 </div>
 <footer>
+<script src="js/script.js"></script>
 <ul>
 </ul></footer>
 </body>
