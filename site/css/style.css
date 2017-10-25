@@ -1,6 +1,10 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
 * {
 	box-sizing: border-box;
 	vertical-align: middle;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 .bg-primary {
 	background-color: #751d27;
@@ -89,7 +93,7 @@ label.control-label {
 	padding: 10px;
 }
 
-.container-fluid {
+body.container-fluid {
 	font-size: 4vw;
 	line-height: 1.5;
 }
