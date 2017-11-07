@@ -18,12 +18,13 @@ function calculateTotal()
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
     var cakePrice = getPrice();
-    
+
     //display the result
     var divobj = document.getElementById('price');
     divobj.style.display='block';
     divobj.innerHTML = "NT$ "+cakePrice;
-
+    divobj.value = cakePrice;
+    document.getElementById('priceAmt').value = cakePrice;
 }
 function hideTotal()
 {
@@ -32,7 +33,5 @@ function hideTotal()
 }
 
 function passPrice(){
-	getPrice();
-	document.getElementById("priceAmt").value;
-	document.getElementById("priceAmt").value = getPrice();
+
 }
